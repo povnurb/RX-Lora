@@ -96,10 +96,10 @@ void loop() {
     display.print(incomingstring);
     display.display();
     Serial.println(incomingstring);
-    if (incomingstring.indexOf("H") >0) { 
+    if (incomingstring.indexOf("HIGH") >0) { 
       digitalWrite(LEDPin, HIGH);
     }
-    else if (incomingstring.indexOf("L") >0) { 
+    else if (incomingstring.indexOf("LOW") >0) { 
       digitalWrite(LEDPin, LOW);
     }
   }
